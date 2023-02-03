@@ -18,7 +18,7 @@ const UserCard =(props)=>{
             Username: 
           </Typography>
           <Typography>
-            {userinfo.username}
+            {userinfo && userinfo.username}
           </Typography>
         </div>
         <div style={{display:'flex'}}>
@@ -26,7 +26,7 @@ const UserCard =(props)=>{
             Name: 
           </Typography>
           <Typography>
-            {userinfo.name}
+            {userinfo && userinfo.name}
           </Typography>
         </div>
         <div style={{display:'flex'}}>
@@ -34,7 +34,7 @@ const UserCard =(props)=>{
             Total followers: 
           </Typography>
           <Typography>
-            {userinfo.total_followers}
+            {userinfo && userinfo.total_followers}
           </Typography>
         </div>
         <div style={{display:'flex'}}>
@@ -42,7 +42,7 @@ const UserCard =(props)=>{
             Public repos: 
           </Typography>
           <Typography>
-            {userinfo.total_publicrepos}
+            {userinfo && userinfo.total_publicrepos}
           </Typography>
         </div>
         <div style={{display:'flex'}}>
@@ -50,7 +50,7 @@ const UserCard =(props)=>{
             Location: 
           </Typography>
           <Typography>
-            {userinfo.location}
+            {userinfo && userinfo.location}
           </Typography>
         </div>
         <div style={{display:'flex'}}>
@@ -58,7 +58,7 @@ const UserCard =(props)=>{
             Bio : 
           </Typography>
           <Typography>
-            {userinfo.bio}
+            {userinfo && userinfo.bio}
           </Typography>
         </div>
         <Typography>Public</Typography>
@@ -67,7 +67,7 @@ const UserCard =(props)=>{
             repos && repos.map((item)=>{
               return(
                 <Typography>
-                {item.name}
+                {item && item.name}
               </Typography>
               )
             })

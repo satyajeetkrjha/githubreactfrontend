@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import { Typography } from '@mui/material';
 
 
-const UserCard =(props)=>{
+const SecondSearch =(props)=>{
  console.log('this.props ',props);
  const{userinfo,repos} = props;
  console.log('userinfo and repos are ',userinfo, repos);
@@ -40,4 +40,4 @@ const UserCard =(props)=>{
        
                     
    
-export default UserCard
+export default SecondSearch ;
