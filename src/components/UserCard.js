@@ -61,7 +61,7 @@ const UserCard =(props)=>{
             {userinfo.bio}
           </Typography>
         </div>
-        <Typography sx={{fontWeight: 'bold'}}>Public Repos list </Typography>
+        <Typography>Public</Typography>
         <div>
           {
             repos && repos.map((item)=>{
